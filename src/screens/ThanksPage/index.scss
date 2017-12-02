@@ -1,0 +1,25 @@
+.thanksPage {
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1244px;
+}
+
+.imgGiftmasWreath {
+  width: 100%;
+  max-width: 200px;
+  @media (min-width: 768px) {
+    max-width: 290px;
+  }
+}
+
+.claimCTA {
+  background: #ff555c;
+}
+
+.textarea {
+  &::placeholder {
+    color: rgba($dark-blue-secondary, 0.5);
+  }
+}
