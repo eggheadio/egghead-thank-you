@@ -6,6 +6,9 @@ import css from './index.scss'
 
 import imgEggo from './assets/images/eggo.svg'
 import imgGiftmasWreath from './assets/images/giftmas-wreath.png'
+import iconPdf from './assets/images/icon-pdf.svg'
+import iconLink from './assets/images/icon-link.svg'
+import iconPrint from './assets/images/icon-print.svg'
 
 const ThanksPage = () => (
   <div className={`lh-copy dark-blue-secondary fw4 ${css.thanksPage}`}>
@@ -37,9 +40,9 @@ const ThanksPage = () => (
               <p className='mt0 mb3'>The gift can be claimed by visiting the following url:</p>
               <div className='flex mb3'>
                 <input type='text' value='https://egghead.io/gifts/claim/aa385b181d5411' className='br2 b--dark-gray-secondary ba dark-blue-secondary bg-white-secondary flex-grow-1 mr2 f5 lh-copy ph3 pv2' style={{height: '3rem'}} />
-                <button type='button' className='f5 bg-dark-gray white nowrap br2 bn fw4 lh-copy ph3 pv2 pointer' style={{height: '3rem'}}>
-                  <Icon type='link' color='white' />
-                  <span className='ml1'>copy link</span>
+                <button type='button' className='inline-flex items-center f5 bg-dark-gray white nowrap br2 bn fw4 lh-copy ph3 pv2 pointer' style={{height: '3rem'}}>
+                  <img src={iconLink} alt='' className='h1 mr2' />
+                  <span>copy link</span>
                 </button>
               </div>
               <p className='mt0 mb3 f6 dark-blue-secondary o-60 lh-copy'>Please make note of this URL. If your email doesn’t arrive for any reason, we may not be able to help you find it.</p>
@@ -94,7 +97,7 @@ const ThanksPage = () => (
             <textarea className={`w-100 br2 b--gray-secondary ba dark-blue-secondary bg-white f5 lh-copy pa3 ${css.textarea}`} rows='7' placeholder='Your information&#8230;' style={{maxWidth: '380px', resize: 'none'}} />
           </div>
         </div>
-        <table className='w-100 mw-100 mb6 dark-blue-secondary collapse'>
+        <table className='w-100 mw-100 mb5 mb6-ns dark-blue-secondary collapse'>
           <thead>
             <tr>
               <th className='w-50 pa2 bb b--gray-secondary f5 fw6 tl'>Description</th>
@@ -119,13 +122,13 @@ const ThanksPage = () => (
             </tr>
           </tbody>
         </table>
-        <div className='flex justify-center'>
-          <button type='button' className='inline-flex items-center bg-dark-gray br-pill white ttu f5 mh2 fw5 lh-solid ph4 pv3 pointer'>
-            <Icon type='file-o' color='white' />
+        <div className='flex justify-center flex-column flex-row-ns'>
+          <button type='button' className='inline-flex items-center bg-dark-gray br-pill white ttu f5 mh2 fw5 lh-solid ph4 pv3 pointer justify-center'>
+            <img src={iconPdf} alt='' className='h1 mr2' />
             <span className='pt1 ml2'>Download pdf</span>
           </button>
-          <button type='button' className='inline-flex items-center bg-dark-gray br-pill white ttu f5 mh2 fw5 lh-solid ph4 pv3 pointer'>
-            <Icon type='print' color='white' />
+          <button type='button' className='inline-flex items-center bg-dark-gray br-pill white ttu f5 mh2 fw5 lh-solid ph4 pv3 pointer justify-center mt3 mt0-ns'>
+            <img src={iconPrint} alt='' className='h1 mr2' />
             <span className='pt1 ml2'>Print invoice</span>
           </button>
         </div>
