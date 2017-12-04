@@ -74,8 +74,8 @@ const ThanksPage = () => (
                 <h3 className='f3 lh-title fw6 avenir dark-blue-secondary mt0 mb3'>Send as a gift</h3>
                 <p className='mt0 mb3'>The gift can be claimed by visiting the following url:</p>
                 <div className='flex mb3'>
-                  <input type='text' value='https://egghead.io/gifts/claim/aa385b181d5411' className='br2 b--dark-gray-secondary ba dark-blue-secondary bg-white-secondary flex-grow-1 mr2 f5 lh-copy ph3 pv2' style={{height: '3rem'}} />
-                  <button type='button' className='inline-flex items-center f5 bg-dark-gray white nowrap br2 bn fw4 lh-copy ph3 pv2 pointer' style={{height: '3rem'}}>
+                  <input type='text' value='https://egghead.io/gifts/claim/aa385b181d5411' className={`br2 b--dark-gray-secondary ba dark-blue-secondary bg-white-secondary flex-auto mr2 f5 lh-copy ph3 pv2 ${css.inputReset}`} style={{height: '3rem'}} />
+                  <button type='button' className='inline-flex items-center f5 bg-dark-gray white nowrap br2 bn fw4 lh-copy ph3 pv2 pointer flex-shrink-0' style={{height: '3rem'}}>
                     <img src={iconLink} alt='' className='h1 mr2' />
                     <span>copy link</span>
                   </button>
@@ -129,7 +129,7 @@ const ThanksPage = () => (
             </div>
             <div className='w-50-ns mt4 mt0-ns'>
               <label className='fw4 f5 db mb3'>Prepared for:</label>
-              <textarea className={`w-100 br2 b--gray-secondary ba dark-blue-secondary bg-white f5 lh-copy pa3 ${css.textarea}`} rows='7' placeholder='Your information&#8230;' style={{maxWidth: '380px', resize: 'none'}} />
+              <textarea className={`w-100 br2 b--gray-secondary ba dark-blue-secondary bg-white f5 lh-copy pa3 ${css.textarea} ${css.inputReset}`} rows='7' placeholder='Your information&#8230;' style={{maxWidth: '380px', resize: 'none'}} />
             </div>
           </div>
           <table className='w-100 mw-100 mb5 mb6-ns dark-blue-secondary collapse'>
@@ -160,11 +160,11 @@ const ThanksPage = () => (
           <div className='flex justify-center flex-column flex-row-ns'>
             <button type='button' className='inline-flex items-center bg-dark-gray br-pill white ttu f5 mh2 fw5 lh-solid ph4 pv3 pointer justify-center'>
               <img src={iconPdf} alt='' className='h1 mr2' />
-              <span className='pt1 ml2'>Download pdf</span>
+              <span className='pt1 nowrap'>Download pdf</span>
             </button>
             <button type='button' className='inline-flex items-center bg-dark-gray br-pill white ttu f5 mh2 fw5 lh-solid ph4 pv3 pointer justify-center mt3 mt0-ns'>
               <img src={iconPrint} alt='' className='h1 mr2' />
-              <span className='pt1 ml2'>Print invoice</span>
+              <span className='pt1 nowrap'>Print invoice</span>
             </button>
           </div>
         </div>

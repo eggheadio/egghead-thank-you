@@ -21,11 +21,17 @@
   }
 }
 
+.inputReset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 .cta {
   background: #ff555c;
 }
 
 .textarea {
+  -webkit-appearance: none;
   &::placeholder {
     color: rgba($dark-blue-secondary, 0.5);
   }
